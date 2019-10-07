@@ -1,5 +1,5 @@
 <html><head><script src="countdown.min.js"></script></head><body>
-<div id="countdown">hello!</div>
+<div id="countdown" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-align: center; vertical-align: middle;line-height:100vh; font-size:4vw;">hello!</div>
 <script>
 
 let update = function() {
@@ -9,4 +9,37 @@ let update = function() {
 }
 requestAnimationFrame(update);
 </script>
+<style>
+body {
+	background: linear-gradient(220deg, #572d38, #333959);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+	-moz-animation: AnimationName 30s ease infinite;
+	animation: AnimationName 30s ease infinite;
+	color:white;
+	overflow:hidden;
+}
+
+#countdown {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(255,255,255,0.1);
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+</style>
 </body></html>
