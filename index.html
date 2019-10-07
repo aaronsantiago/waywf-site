@@ -1,1 +1,12 @@
-hello!
+<html><head><script src="countdown.min.js"></script></head><body>
+<div id="countdown">hello!</div>
+<script>
+
+let update = function() {
+	let text = countdown( new Date('October 9, 2019 00:00:00 GMT+2:00') ).toString();
+	document.getElementById("countdown").innerHTML = text;
+	requestAnimationFrame(update);
+}
+requestAnimationFrame(update);
+</script>
+</body></html>
